@@ -41,4 +41,5 @@ jobs:
 
           # 5. Force Push
           # We force push because we rewrote history (replaced yesterday's commit with today's)
-          git push origin master --force
+          git push https://rolj:${{ secrets.PERSONAL_ACCESS_TOKEN }}@github.com/rolj/netdata.git master --force
+
