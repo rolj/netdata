@@ -11,11 +11,11 @@ jobs:
     steps:
       - name: Configure Git
         run: |
-          git config --global user.email "rolandas@home.lt"
+          git config --global user.email "5594712+rolj@users.noreply.github.com"
           git config --global user.name "rolj"
 
       - name: Checkout Forked Repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v2
         with:
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           fetch-depth: 0
